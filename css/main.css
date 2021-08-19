@@ -114,7 +114,7 @@ body{
 }
 
 .teste_bg{
-  background-image: url(../img/lady-with-her-dogs.jpg);
+  background-image: url("/img/lady-with-her-dogs.jpg");
   height: 600px;
   background-size: cover;
   position: relative;
