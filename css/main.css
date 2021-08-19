@@ -47,7 +47,7 @@ body{
 }
 
 .ads{
-  background-image: url(/img/hero.jpg);
+  background-image: url('../img/hero.jpg');
   height: 500px;
   background-size: cover;
   flex-direction: column;
