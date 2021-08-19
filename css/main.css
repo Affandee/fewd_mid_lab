@@ -1,19 +1,161 @@
-/*
- * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
- *
- * Colors-
- * Green: #14a96d
- * White: #fff
- * Light gray: #f4f5f6
- * Border gray: #cfd7de
- * Dark text: #1b1f23
- * Lighter text: #66727c
- * Blue for links: #06748a
- * Blue for hovered links: #033641
- */
-
-/* Globals */
-body {
-  font-family: 'Cabin', sans-serif;
+body{
+  margin: 0 auto;
+  width: 70%;
 }
 
+.flex{
+  display: flex;
+}
+
+.justify_space_between{
+  justify-content: space-between;
+}
+
+.justify_center{
+  justify-content: center;
+}
+
+.alignitemscenter{
+  align-items: center;
+}
+
+.column{
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .nav_1>a, .nav_2>a{
+    display: none;
+  }
+}
+
+
+.bars{
+  display: none;
+}
+
+@media (max-width:800px){
+  .bars{
+      display:block;
+  }
+}
+
+.nav_1>a, .nav_2>a{
+  text-decoration: none;
+  color:teal;
+  margin-right:15px;
+}
+
+.ads{
+  background-image: url(/img/hero.jpg);
+  height: 500px;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  color: teal;
+}
+
+.ads p{
+  font-weight: bolder;
+  font-size: x-large;
+  width: 40%;
+}
+
+.ads a{
+  text-decoration: none;
+  border: 1px solid green;
+  background-color:olivedrab;
+  color: white;
+  width: 35%;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.grid_2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width:800px){
+  .grid_2{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+}
+
+.left_content>div{
+  display: flex;
+}
+
+.border{
+  border:1px solid lightblue;
+  padding: 15px;
+}
+
+.right_content a{
+  text-decoration: none;
+  color: white;
+  background-color:olivedrab;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.mobile_img img{
+  display: none;
+  width: 280px;
+  height: 300px;
+}
+
+@media (max-width: 800px) {
+  .mobile_img img{
+    display: block;
+  }
+}
+
+.teste_bg{
+  background-image: url(/img/lady-with-her-dogs.jpg);
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+.floatbar{
+  position: absolute;
+  width:220px;
+  background-color: white;
+  left:15%;
+  top:15px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+}
+
+.grid_3{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:5px;
+  display: flex;
+  justify-content: space-between
+}
+
+@media (max-width:800px){
+  .grid_3{
+      display: grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 100%;
+  align-items: center;
+  }
+}
+
+.nav_end > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 200px;
+}
