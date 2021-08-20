@@ -25,8 +25,20 @@
         </div>
 
         <div class="bars">
-            <img src="img/hamburger.svg" alt="hamburger-icon">
+            <img id="clickbar" src="img/hamburger.svg" alt="hamburger-icon">
         </div>
+    
+        <nav id="mob_c" class="mobile_nav flex">
+            <a href="#">Search Sitters</a>
+            <a href="#">Become a Sitter</a>
+            <a href="#">Our Services</a>
+            <a href="#">Sign up</a>
+            <a href="#">Sign in</a>
+            <a href="#">Help</a>
+            ______________________
+            <a id="close" href="#">close</a>
+            
+        </nav>
 
     </Header>
 
@@ -142,6 +154,23 @@
 
     </main>
 
+    <script>
+
+        let bars = document.querySelector("#clickbar")
+        let closeup = document.querySelector("#close")
+
+
+        bars.addEventListener("click", function(){
+            document.querySelector("#mob_c").classList.add("show")
+            
+        })
+
+        closeup.addEventListener("click", function(){
+            document.querySelector("#mob_c").classList.remove("show")
+        })
+
+
+    </script>
     
 
 

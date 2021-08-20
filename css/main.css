@@ -40,6 +40,46 @@ body{
   }
 }
 
+.mobile_nav a{
+  text-decoration: none;
+  color: rgb(95, 102, 95);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.mobile_nav{
+  flex-direction: column;
+  position: absolute;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  right:15%;
+  top:5%;
+  height: 30%;
+  width: 45%;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+.show{
+  
+  display: flex ;
+  animation: showup 0.4s ease-in-out;
+}
+
+
+@keyframes showup {
+  0%{
+      transform: translateX(25%);
+  }
+
+  100%{
+      transform: translateX(0%);
+  }
+}
+
+
+
 .nav_1>a, .nav_2>a{
   text-decoration: none;
   color:teal;
